@@ -115,7 +115,7 @@ void TDA7419::setSoft(int s_mute, int pin, int s_m_time, int s_time, int clock){
   
 
 void TDA7419::setVolume(int volume, int soft0){
-  volume = 80 - volume;
+  volume = 95 - volume;
   switch (soft0) {
   case  0:  soft0 = 0b00000000;break;
   case  1:  soft0 = 0b10000000;break;
@@ -124,7 +124,7 @@ void TDA7419::setVolume(int volume, int soft0){
 }
 
 void TDA7419::setAtt_LF(int left_f, int soft1){
-  left_f = 80 - left_f;
+  left_f = 95 - left_f;
   switch (soft1) {
   case  0:  soft1 = 0b00000000;break;
   case  1:  soft1 = 0b10000000;break;
@@ -133,7 +133,7 @@ void TDA7419::setAtt_LF(int left_f, int soft1){
 }
 
 void TDA7419::setAtt_RF(int right_f, int soft2){
-  right_f = 80 - right_f;
+  right_f = 95 - right_f;
   switch (soft2) {
   case  0:  soft2 = 0b00000000;break;
   case  1:  soft2 = 0b10000000;break;
@@ -142,7 +142,7 @@ void TDA7419::setAtt_RF(int right_f, int soft2){
 }
 
 void TDA7419::setAtt_LT(int left_t, int soft3){
-  left_t = 80 - left_t;
+  left_t = 95 - left_t;
   switch (soft3) {
   case  0:  soft3 = 0b00000000;break;
   case  1:  soft3 = 0b10000000;break;
@@ -151,7 +151,7 @@ void TDA7419::setAtt_LT(int left_t, int soft3){
 }
 
 void TDA7419::setAtt_RT(int right_t, int soft4){
-  right_t = 80 - right_t;
+  right_t = 95 - right_t;
   switch (soft4) {
   case  0:  soft4 = 0b00000000;break;
   case  1:  soft4 = 0b10000000;break;
@@ -160,7 +160,7 @@ void TDA7419::setAtt_RT(int right_t, int soft4){
 }
 
 void TDA7419::setAtt_SUB(int subwoofer, int soft5){
-  subwoofer = 80 - subwoofer;
+  subwoofer = 95 - subwoofer;
   switch (soft5) {
   case  0:  soft5 = 0b00000000;break;
   case  1:  soft5 = 0b10000000;break;
@@ -169,7 +169,7 @@ void TDA7419::setAtt_SUB(int subwoofer, int soft5){
 }
 
 void TDA7419::setAtt_Mix(int mixing, int soft6){
-  mixing = 80 - mixing;
+  mixing = 95 - mixing;
   switch (soft6) {
   case  0:  soft6 = 0b00000000;break;
   case  1:  soft6 = 0b10000000;break;
