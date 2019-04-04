@@ -115,7 +115,8 @@ void TDA7419::setSoft(int s_mute, int pin, int s_m_time, int s_time, int clock){
   
 
 void TDA7419::setVolume(int volume, int soft0){
-  volume = 95 - volume;
+  if(volume<=15){}
+  if(volume>15){volume = volume + 16;}
   switch (soft0) {
   case  0:  soft0 = 0b00000000;break;
   case  1:  soft0 = 0b10000000;break;
