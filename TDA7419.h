@@ -1,6 +1,6 @@
 // Алксандр Лиман
 // liman324@yandex.ru
-// rcl-radio.ru
+// Пример использования - https://rcl-radio.ru/?p=57658
 
 #ifndef TDA7419_H
 #define TDA7419_H
