@@ -1,3 +1,7 @@
+// Алксандр Лиман
+// liman324@yandex.ru
+// rcl-radio.ru
+
 #ifndef TDA7419_H
 #define TDA7419_H
 // address 7 bit
