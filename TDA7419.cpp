@@ -115,8 +115,8 @@ void TDA7419::setSoft(int s_mute, int pin, int s_m_time, int s_time, int clock){
   
 
 void TDA7419::setVolume(int volume, int soft0){
-  if(volume >= 0){} // 0 ... +15 dB
-  if(volume < 0){volume = abs((volume) + 16;} //-79 ... 0 dB
+   if(volume >= 0){} // 0 ... +15 dB
+  if(volume < 0){volume = abs(volume) + 16;} //-79 ... 0 dB
   switch (soft0) {
   case  0:  soft0 = 0b00000000;break;
   case  1:  soft0 = 0b10000000;break;
@@ -192,8 +192,9 @@ void TDA7419::setFilter_Treble(int treble_g, int treble_c, int treble_ref) {
         case  -9: treble_g  = 0b00001001;break;
         case  -10: treble_g = 0b00001010;break;
         case  -11: treble_g = 0b00001011;break;
-        case  -12: treble_g = 0b00001101;break;
-        case  -13: treble_g = 0b00001110;break;
+        case  -12: treble_g = 0b00001100;break;
+        case  -13: treble_g = 0b00001101;break;
+        case  -14: treble_g = 0b00001110;break;
         case  -15: treble_g = 0b00001111;break;
         
         case  0: treble_g   = 0b00000000;break;
@@ -208,8 +209,9 @@ void TDA7419::setFilter_Treble(int treble_g, int treble_c, int treble_ref) {
         case  9: treble_g   = 0b00011001;break;
         case  10: treble_g  = 0b00011010;break;
         case  11: treble_g  = 0b00011011;break;
-        case  12: treble_g  = 0b00011101;break;
-        case  13: treble_g  = 0b00011110;break;
+        case  12: treble_g  = 0b00011100;break;
+        case  13: treble_g  = 0b00011101;break;
+        case  14: treble_g  = 0b00011110;break;
         case  15: treble_g  = 0b00011111;break;     
 	} 
   switch (treble_c) {
@@ -240,8 +242,9 @@ void TDA7419::setFilter_Middle(int middle_g, int middle_q, int middle_s) {
         case  -9: middle_g = 0b00001001;break;
         case  -10: middle_g = 0b00001010;break;
         case  -11: middle_g = 0b00001011;break;
-        case  -12: middle_g = 0b00001101;break;
-        case  -13: middle_g = 0b00001110;break;
+        case  -12: middle_g = 0b00001100;break;
+        case  -13: middle_g = 0b00001101;break;
+        case  -14: middle_g = 0b00001110;break;
         case  -15: middle_g = 0b00001111;break;
   
         case  0: middle_g = 0b00000000;break;
@@ -256,9 +259,10 @@ void TDA7419::setFilter_Middle(int middle_g, int middle_q, int middle_s) {
         case  9: middle_g = 0b00011001;break;
         case  10: middle_g = 0b00011010;break;
         case  11: middle_g = 0b00011011;break;
-        case  12: middle_g = 0b00011101;break;
-        case  13: middle_g = 0b00011110;break;
-        case  15: middle_g = 0b00011111;break;     
+        case  12: middle_g  = 0b00011100;break;
+        case  13: middle_g  = 0b00011101;break;
+        case  14: middle_g  = 0b00011110;break;
+        case  15: middle_g  = 0b00011111;break;  
 	} 
 	switch (middle_q) {
         case  0: middle_q = 0b00000000;break;
@@ -287,8 +291,9 @@ void TDA7419::setFilter_Bass(int bass_g, int bass_q, int bass_s) {
         case  -9: bass_g = 0b00001001;break;
         case  -10: bass_g = 0b00001010;break;
         case  -11: bass_g = 0b00001011;break;
-        case  -12: bass_g = 0b00001101;break;
-        case  -13: bass_g = 0b00001110;break;
+        case  -12: bass_g = 0b00001100;break;
+        case  -13: bass_g = 0b00001101;break;
+        case  -14: bass_g = 0b00001110;break;
         case  -15: bass_g = 0b00001111;break;
   
         case  0: bass_g = 0b00000000;break;
@@ -303,8 +308,9 @@ void TDA7419::setFilter_Bass(int bass_g, int bass_q, int bass_s) {
         case  9: bass_g = 0b00011001;break;
         case  10: bass_g = 0b00011010;break;
         case  11: bass_g = 0b00011011;break;
-        case  12: bass_g = 0b00011101;break;
-        case  13: bass_g = 0b00011110;break;
+        case  12: bass_g = 0b00011100;break;
+        case  13: bass_g = 0b00011101;break;
+        case  14: bass_g = 0b00011110;break;
         case  15: bass_g = 0b00011111;break;     
 	} 
 	switch (bass_q) {
