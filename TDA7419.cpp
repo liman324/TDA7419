@@ -274,7 +274,7 @@ void TDA7419::setFilter_Middle(int middle_g, int middle_q, int middle_s) {
         case  0: middle_s = 0b00000000;break;
         case  1: middle_s = 0b10000000;break;
         }
-        int middle_sum = middle_g + middle_s + middle_s;
+        int middle_sum = middle_g + middle_q + middle_s;
   writeWire(TDA7419_MIDDLE , middle_sum);
 }
 
@@ -323,7 +323,7 @@ void TDA7419::setFilter_Bass(int bass_g, int bass_q, int bass_s) {
         case  0: bass_s = 0b00000000;break;
         case  1: bass_s = 0b10000000;break;
         }
-         int bass_sum = bass_g + bass_s + bass_s;
+         int bass_sum = bass_g + bass_q + bass_s;
   writeWire(TDA7419_BASS , bass_sum);
         }
         
